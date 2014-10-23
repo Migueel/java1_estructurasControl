@@ -1,0 +1,32 @@
+/*
+ * Programa que dibuja un rectángulo sólido de asteriscos.
+ * El número de filas y columnas se pide por teclado
+ */
+import java.util.*;
+public class Ejemplo1BuclesAnidados {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int filas, columnas;
+        
+        //primero se ejecutaran las instrucciones de este bloque
+        do{
+           System.out.print("Introduce número de filas: ");
+           filas = sc.nextInt();
+	//si la condicion se cumple se ejecutaran las instrucciones del bloque while       
+	}while(filas<1);
+        
+        do{
+           System.out.print("Introduce número de columnas: ");
+           columnas = sc.nextInt();
+        }while(columnas<1);
+        //la variable i ira aumentando en 1 y pintando un "*" cada vez hasta llegar al valor de filas
+        for(int i = 1; i<=filas; i++){    //filas
+	//la variable j ira aumentando en 1 y pintando un "*" cada vez hasta llegar al valor de columnas           
+	for(int j = 1; j<=columnas; j++){  //columnas 
+                 System.out.print(" * ");
+            }
+            System.out.println();
+        }
+       
+    }
+}
